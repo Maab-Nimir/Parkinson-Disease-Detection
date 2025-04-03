@@ -1,3 +1,5 @@
 parksenv/
 *.json
 .ipynb_checkpoints/
+train-models/train_xvector_fbanks.py
+train-models/hparams_xvector_fbanks.yaml

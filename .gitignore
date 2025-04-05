@@ -1,5 +1,10 @@
 parksenv/
 *.json
 .ipynb_checkpoints/
-train-models/train_xvector_fbanks.py
-train-models/hparams_xvector_fbanks.yaml
+train_models/train_xvector_fbanks.py
+ssl/trainwav2vec.py
+ssl/*.yaml
+train_models/train_ecapatdnn_fbanks.py
+train_models/*.yaml
+train_models/trainvowels_xvector_fbanks.py
+train_models/xvector-vowels.ipynb

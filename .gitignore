@@ -1,5 +1,6 @@
 parksenv/
 *.json
+*.out
 .ipynb_checkpoints/
 train_models/train_xvector_fbanks.py
 ssl/trainwav2vec.py

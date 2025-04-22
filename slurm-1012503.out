@@ -1,287 +1,0 @@
-/home/ulaval.ca/maelr5/parkinsons/parksenv/lib/python3.11/site-packages/speechbrain/utils/autocast.py:188: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
-  wrapped_fwd = torch.cuda.amp.custom_fwd(fwd, cast_inputs=cast_inputs)
-speechbrain.utils.quirks - Applied quirks (see `speechbrain.utils.quirks`): [allow_tf32, disable_jit_profiling]
-speechbrain.utils.quirks - Excluded quirks specified by the `SB_DISABLE_QUIRKS` environment (comma-separated list): []
-speechbrain.core - Beginning experiment!
-speechbrain.core - Experiment folder: /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986
-speechbrain.dataio.encoder - Load called, but CategoricalEncoder is not empty. Loaded data will overwrite everything. This is normal if there is e.g. an unk label defined at init.
-speechbrain.core - Gradscaler enabled: `False`
-speechbrain.core - Using training precision: `--precision=fp32`
-speechbrain.core - Using evaluation precision: `--eval_precision=fp32`
-speechbrain.core - DetectorBrain Model Statistics:
-* Total Number of Trainable Parameters: 20.6M
-* Total Number of Parameters: 20.6M
-* Trainable Parameters represent 100.0000% of the total size.
-speechbrain.utils.checkpoints - Would load a checkpoint here, but none found yet.
-speechbrain.utils.epoch_loop - Going into epoch 1
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:02<?, ?it/s, train_loss=6.22]100%|██████████| 1/1 [00:02<00:00,  2.10s/it, train_loss=6.22]100%|██████████| 1/1 [00:02<00:00,  2.12s/it, train_loss=6.22]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:01<00:00,  1.88s/it]100%|██████████| 1/1 [00:01<00:00,  1.92s/it]
-speechbrain.nnet.schedulers - Changing lr from 0.0001 to 9.7e-05
-speechbrain.utils.train_logger - Epoch: 1, lr: 1.00e-04 - train loss: 6.22 - valid loss: 6.59e-03, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-39+00
-speechbrain.utils.epoch_loop - Going into epoch 2
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.58it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.28it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.39it/s]100%|██████████| 1/1 [00:00<00:00,  3.83it/s]
-speechbrain.nnet.schedulers - Changing lr from 9.7e-05 to 9.4e-05
-speechbrain.utils.train_logger - Epoch: 2, lr: 9.69e-05 - train loss: 0.00e+00 - valid loss: 1.74e-04, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-41+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-39+00
-speechbrain.utils.epoch_loop - Going into epoch 3
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.61it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.40it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.33it/s]100%|██████████| 1/1 [00:00<00:00,  3.62it/s]
-speechbrain.nnet.schedulers - Changing lr from 9.4e-05 to 9.1e-05
-speechbrain.utils.train_logger - Epoch: 3, lr: 9.38e-05 - train loss: 0.00e+00 - valid loss: 3.90e-05, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-42+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-41+00
-speechbrain.utils.epoch_loop - Going into epoch 4
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.60it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.35it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.33it/s]100%|██████████| 1/1 [00:00<00:00,  3.78it/s]
-speechbrain.nnet.schedulers - Changing lr from 9.1e-05 to 8.8e-05
-speechbrain.utils.train_logger - Epoch: 4, lr: 9.07e-05 - train loss: 0.00e+00 - valid loss: 2.72e-05, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-43+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-42+00
-speechbrain.utils.epoch_loop - Going into epoch 5
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.66it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.43it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.35it/s]100%|██████████| 1/1 [00:00<00:00,  3.76it/s]
-speechbrain.nnet.schedulers - Changing lr from 8.8e-05 to 8.4e-05
-speechbrain.utils.train_logger - Epoch: 5, lr: 8.76e-05 - train loss: 0.00e+00 - valid loss: 3.84e-05, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-44+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-43+00
-speechbrain.utils.epoch_loop - Going into epoch 6
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.65it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.39it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.48it/s]100%|██████████| 1/1 [00:00<00:00,  3.79it/s]
-speechbrain.nnet.schedulers - Changing lr from 8.4e-05 to 8.1e-05
-speechbrain.utils.train_logger - Epoch: 6, lr: 8.45e-05 - train loss: 0.00e+00 - valid loss: 8.21e-05, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-46+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-44+00
-speechbrain.utils.epoch_loop - Going into epoch 7
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.64it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.42it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.38it/s]100%|██████████| 1/1 [00:00<00:00,  3.81it/s]
-speechbrain.nnet.schedulers - Changing lr from 8.1e-05 to 7.8e-05
-speechbrain.utils.train_logger - Epoch: 7, lr: 8.14e-05 - train loss: 0.00e+00 - valid loss: 2.43e-04, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-48+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-46+00
-speechbrain.utils.epoch_loop - Going into epoch 8
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.64it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.43it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.48it/s]100%|██████████| 1/1 [00:00<00:00,  3.85it/s]
-speechbrain.nnet.schedulers - Changing lr from 7.8e-05 to 7.5e-05
-speechbrain.utils.train_logger - Epoch: 8, lr: 7.83e-05 - train loss: 0.00e+00 - valid loss: 8.62e-04, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-49+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-48+00
-speechbrain.utils.epoch_loop - Going into epoch 9
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.63it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.41it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.49it/s]100%|██████████| 1/1 [00:00<00:00,  3.89it/s]
-speechbrain.nnet.schedulers - Changing lr from 7.5e-05 to 7.2e-05
-speechbrain.utils.train_logger - Epoch: 9, lr: 7.52e-05 - train loss: 0.00e+00 - valid loss: 3.42e-03, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-50+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-49+00
-speechbrain.utils.epoch_loop - Going into epoch 10
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.62it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.40it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.46it/s]100%|██████████| 1/1 [00:00<00:00,  3.78it/s]
-speechbrain.nnet.schedulers - Changing lr from 7.2e-05 to 6.9e-05
-speechbrain.utils.train_logger - Epoch: 10, lr: 7.21e-05 - train loss: 0.00e+00 - valid loss: 1.37e-02, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-51+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-50+00
-speechbrain.utils.epoch_loop - Going into epoch 11
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.60it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.38it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.33it/s]100%|██████████| 1/1 [00:00<00:00,  3.62it/s]
-speechbrain.nnet.schedulers - Changing lr from 6.9e-05 to 6.6e-05
-speechbrain.utils.train_logger - Epoch: 11, lr: 6.90e-05 - train loss: 0.00e+00 - valid loss: 5.06e-02, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-53+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-51+00
-speechbrain.utils.epoch_loop - Going into epoch 12
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.68it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.45it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.32it/s]100%|██████████| 1/1 [00:00<00:00,  3.76it/s]
-speechbrain.nnet.schedulers - Changing lr from 6.6e-05 to 6.3e-05
-speechbrain.utils.train_logger - Epoch: 12, lr: 6.59e-05 - train loss: 0.00e+00 - valid loss: 1.57e-01, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-55+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-53+00
-speechbrain.utils.epoch_loop - Going into epoch 13
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.61it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.36it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.42it/s]100%|██████████| 1/1 [00:00<00:00,  3.86it/s]
-speechbrain.nnet.schedulers - Changing lr from 6.3e-05 to 6e-05
-speechbrain.utils.train_logger - Epoch: 13, lr: 6.28e-05 - train loss: 0.00e+00 - valid loss: 3.80e-01, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-56+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-55+00
-speechbrain.utils.epoch_loop - Going into epoch 14
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.61it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.39it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.51it/s]100%|██████████| 1/1 [00:00<00:00,  3.77it/s]
-speechbrain.nnet.schedulers - Changing lr from 6e-05 to 5.7e-05
-speechbrain.utils.train_logger - Epoch: 14, lr: 5.97e-05 - train loss: 0.00e+00 - valid loss: 7.03e-01, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-58+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-56+00
-speechbrain.utils.epoch_loop - Going into epoch 15
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.66it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.44it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.48it/s]100%|██████████| 1/1 [00:00<00:00,  3.90it/s]
-speechbrain.nnet.schedulers - Changing lr from 5.7e-05 to 5.3e-05
-speechbrain.utils.train_logger - Epoch: 15, lr: 5.66e-05 - train loss: 0.00e+00 - valid loss: 1.05, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-00+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-10-58+00
-speechbrain.utils.epoch_loop - Going into epoch 16
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.61it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.40it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.45it/s]100%|██████████| 1/1 [00:00<00:00,  3.89it/s]
-speechbrain.nnet.schedulers - Changing lr from 5.3e-05 to 5e-05
-speechbrain.utils.train_logger - Epoch: 16, lr: 5.34e-05 - train loss: 0.00e+00 - valid loss: 1.36, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-01+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-00+00
-speechbrain.utils.epoch_loop - Going into epoch 17
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.62it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.40it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.40it/s]100%|██████████| 1/1 [00:00<00:00,  3.74it/s]
-speechbrain.nnet.schedulers - Changing lr from 5e-05 to 4.7e-05
-speechbrain.utils.train_logger - Epoch: 17, lr: 5.03e-05 - train loss: 0.00e+00 - valid loss: 1.62, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-02+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-01+00
-speechbrain.utils.epoch_loop - Going into epoch 18
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.60it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.34it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.43it/s]100%|██████████| 1/1 [00:00<00:00,  3.85it/s]
-speechbrain.nnet.schedulers - Changing lr from 4.7e-05 to 4.4e-05
-speechbrain.utils.train_logger - Epoch: 18, lr: 4.72e-05 - train loss: 0.00e+00 - valid loss: 1.80, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-03+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-02+00
-speechbrain.utils.epoch_loop - Going into epoch 19
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.65it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.42it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.47it/s]100%|██████████| 1/1 [00:00<00:00,  3.88it/s]
-speechbrain.nnet.schedulers - Changing lr from 4.4e-05 to 4.1e-05
-speechbrain.utils.train_logger - Epoch: 19, lr: 4.41e-05 - train loss: 0.00e+00 - valid loss: 1.92, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-06+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-03+00
-speechbrain.utils.epoch_loop - Going into epoch 20
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.60it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.35it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.40it/s]100%|██████████| 1/1 [00:00<00:00,  3.73it/s]
-speechbrain.nnet.schedulers - Changing lr from 4.1e-05 to 3.8e-05
-speechbrain.utils.train_logger - Epoch: 20, lr: 4.10e-05 - train loss: 0.00e+00 - valid loss: 1.97, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-07+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-06+00
-speechbrain.utils.epoch_loop - Going into epoch 21
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.64it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.37it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.54it/s]100%|██████████| 1/1 [00:00<00:00,  3.91it/s]
-speechbrain.nnet.schedulers - Changing lr from 3.8e-05 to 3.5e-05
-speechbrain.utils.train_logger - Epoch: 21, lr: 3.79e-05 - train loss: 0.00e+00 - valid loss: 1.96, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-09+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-07+00
-speechbrain.utils.epoch_loop - Going into epoch 22
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.61it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.40it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.38it/s]100%|██████████| 1/1 [00:00<00:00,  3.65it/s]
-speechbrain.nnet.schedulers - Changing lr from 3.5e-05 to 3.2e-05
-speechbrain.utils.train_logger - Epoch: 22, lr: 3.48e-05 - train loss: 0.00e+00 - valid loss: 1.90, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-10+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-09+00
-speechbrain.utils.epoch_loop - Going into epoch 23
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.65it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.43it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.48it/s]100%|██████████| 1/1 [00:00<00:00,  3.74it/s]
-speechbrain.nnet.schedulers - Changing lr from 3.2e-05 to 2.9e-05
-speechbrain.utils.train_logger - Epoch: 23, lr: 3.17e-05 - train loss: 0.00e+00 - valid loss: 1.80, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-14+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-10+00
-speechbrain.utils.epoch_loop - Going into epoch 24
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.65it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.44it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.47it/s]100%|██████████| 1/1 [00:00<00:00,  3.91it/s]
-speechbrain.nnet.schedulers - Changing lr from 2.9e-05 to 2.6e-05
-speechbrain.utils.train_logger - Epoch: 24, lr: 2.86e-05 - train loss: 0.00e+00 - valid loss: 1.67, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-16+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-14+00
-speechbrain.utils.epoch_loop - Going into epoch 25
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.59it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.33it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.45it/s]100%|██████████| 1/1 [00:00<00:00,  3.70it/s]
-speechbrain.nnet.schedulers - Changing lr from 2.6e-05 to 2.2e-05
-speechbrain.utils.train_logger - Epoch: 25, lr: 2.55e-05 - train loss: 0.00e+00 - valid loss: 1.50, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-17+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-16+00
-speechbrain.utils.epoch_loop - Going into epoch 26
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.65it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.40it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.47it/s]100%|██████████| 1/1 [00:00<00:00,  3.81it/s]
-speechbrain.nnet.schedulers - Changing lr from 2.2e-05 to 1.9e-05
-speechbrain.utils.train_logger - Epoch: 26, lr: 2.24e-05 - train loss: 0.00e+00 - valid loss: 1.31, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-19+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-17+00
-speechbrain.utils.epoch_loop - Going into epoch 27
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.64it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.38it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.54it/s]100%|██████████| 1/1 [00:00<00:00,  3.79it/s]
-speechbrain.nnet.schedulers - Changing lr from 1.9e-05 to 1.6e-05
-speechbrain.utils.train_logger - Epoch: 27, lr: 1.93e-05 - train loss: 0.00e+00 - valid loss: 1.11, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-20+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-19+00
-speechbrain.utils.epoch_loop - Going into epoch 28
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.64it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.36it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.34it/s]100%|██████████| 1/1 [00:00<00:00,  3.76it/s]
-speechbrain.nnet.schedulers - Changing lr from 1.6e-05 to 1.3e-05
-speechbrain.utils.train_logger - Epoch: 28, lr: 1.62e-05 - train loss: 0.00e+00 - valid loss: 9.04e-01, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-21+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-20+00
-speechbrain.utils.epoch_loop - Going into epoch 29
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.66it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.44it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.54it/s]100%|██████████| 1/1 [00:00<00:00,  3.85it/s]
-speechbrain.nnet.schedulers - Changing lr from 1.3e-05 to 1e-05
-speechbrain.utils.train_logger - Epoch: 29, lr: 1.31e-05 - train loss: 0.00e+00 - valid loss: 7.15e-01, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-22+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-21+00
-speechbrain.utils.epoch_loop - Going into epoch 30
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-  0%|          | 0/1 [00:00<?, ?it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.62it/s, train_loss=0]100%|██████████| 1/1 [00:00<00:00,  2.40it/s, train_loss=0]
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:00<00:00,  4.34it/s]100%|██████████| 1/1 [00:00<00:00,  3.79it/s]
-speechbrain.utils.train_logger - Epoch: 30, lr: 1.00e-05 - train loss: 0.00e+00 - valid loss: 5.42e-01, valid error: 0.00e+00
-speechbrain.utils.checkpoints - Saved an end-of-epoch checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-23+00
-speechbrain.utils.checkpoints - Deleted checkpoint in /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-22+00
-speechbrain.utils.checkpoints - Loading a checkpoint from /home/ulaval.ca/maelr5/scratch/parkinsons-results/ECAPA-TDNN/1986/save/CKPT+2025-04-04+20-11-23+00
-  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:01<?, ?it/s]speechbrain.dataio.encoder - CategoricalEncoder.expect_len was never called: assuming category count of 2 to be correct! Sanity check your encoder using `.expect_len`. Ensure that downstream code also uses the correct size. If you are sure this does not apply to you, use `.ignore_len`.
-100%|██████████| 1/1 [00:01<00:00,  1.47s/it]100%|██████████| 1/1 [00:01<00:00,  1.50s/it]
-speechbrain.utils.train_logger - Epoch loaded: 30 - test loss: 17.25, test error: 5.00e-01

@@ -1,4 +1,5 @@
 parksenv/
+__pycache__/
 *.json
 .ipynb_checkpoints/
 train_models/train_xvector_fbanks.py

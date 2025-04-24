@@ -4,6 +4,8 @@ parksenv/
 train_models/train_xvector_fbanks.py
 ssl/trainwav2vec.py
 ssl/*.yaml
+ssl/train_wavlm_enhanced.py
+train_models/*_fbanks.py
 train_models/train_ecapatdnn_fbanks.py
 train_models/*.yaml
 train_models/trainvowels_xvector_fbanks.py

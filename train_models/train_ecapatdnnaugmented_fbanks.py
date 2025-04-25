@@ -32,7 +32,7 @@ Author
 # Brain class for Language ID training
 class DetectorBrain(sb.Brain):
     def prepare_features(self, wavs, lens, stage):
-        """Prepare the features for computation, including augmentation.
+        """Prepare the features for computation.
 
         Arguments
         ---------
@@ -111,11 +111,16 @@ class DetectorBrain(sb.Brain):
 
         targets = batch.detection_id_encoded.data
         # Concatenate labels (due to data augmentation)
-        if stage == sb.Stage.TRAIN:
-            if hasattr(self.hparams, "wav_augment"):
-                targets = self.hparams.wav_augment.replicate_labels(targets)
-                if hasattr(self.hparams.lr_annealing, "on_batch_end"):
-                    self.hparams.lr_annealing.on_batch_end(self.optimizer)
+        if stage == sb.Stage.TRAIN and hasattr(self.hparams, "wav_augment"):
+            targets = self.hparams.wav_augment.replicate_labels(targets)
+            # tokens_lens = self.hparams.wav_augment.replicate_labels(tokens_lens)
+
+        # if stage == sb.Stage.TRAIN:
+        #     if hasattr(self.hparams, "wav_augment"):
+        #         targets = self.hparams.wav_augment.replicate_labels(targets)
+        #         if hasattr(self.hparams.lr_annealing, "on_batch_end"):
+        #             self.hparams.lr_annealing.on_batch_end(self.optimizer)
+
         loss = self.hparams.compute_cost(predictions, targets)
 
         if stage != sb.Stage.TRAIN:
@@ -293,7 +298,6 @@ def dataio_prep(hparams):
         """Load the signal, and pass it and its length to the corruption class.
         This is done on the CPU in the `collate_fn`."""
         sig, _ = torchaudio.load(wav)
-        # sig = torchaudio.functional.resample(sig.squeeze(0), fs, hparams["sample_rate"])
         sig = sig.transpose(0, 1).squeeze(1)
 
         return sig
@@ -361,8 +365,8 @@ if __name__ == "__main__":
         )
 
     # Data preparation for augmentation
-    sb.utils.distributed.run_on_main(hparams["prepare_noise_data"])
-    sb.utils.distributed.run_on_main(hparams["prepare_rir_data"])
+    # sb.utils.distributed.run_on_main(hparams["prepare_noise_data"])
+    # sb.utils.distributed.run_on_main(hparams["prepare_rir_data"])
 
     # Create dataset objects "train", "valid", and "test" and label_encoder
     datasets, label_encoder = dataio_prep(hparams)
